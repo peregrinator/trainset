@@ -1,3 +1,8 @@
 @import "bootstrap";
 
-@import "design/users"
+@import "utilities/colors";
+
+@import "mixins/borders";
+
+@import "design/forms";
+@import "design/users";

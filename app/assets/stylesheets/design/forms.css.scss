@@ -1,0 +1,16 @@
+.formtastic ol { list-style: none; }
+
+.formtastic label {
+  background-color: transparent;
+  color: $black;
+  font-size: 12px;
+
+  margin-bottom: 0;
+  padding-left: 0;
+  }
+.formtastic label:hover { color: $black; }
+
+.formtastic .boolean input {
+  display: inline;
+  margin-right: 3px;
+  }
