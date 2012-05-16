@@ -7,10 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+  <% unless ['users', 'sessions', 'registrations'].include?(controller.controller_name) %>
   <ul class="user_menu">
     <%= render 'devise/menu/registration_items' %>
     <%= render 'devise/menu/login_items' %>
   </ul>
+  <% end %>
 
   <%= render :partial => 'layouts/flash_messages' %>
   
