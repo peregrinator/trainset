@@ -8,7 +8,7 @@ gem 'mysql2', '0.3.11'
 gem 'jquery-rails'
 
 # forms
-gem 'formtastic', '2.0.2'
+gem 'formtastic', '2.2.0'
 
 # authentication
 gem 'devise',     '1.5.0'
