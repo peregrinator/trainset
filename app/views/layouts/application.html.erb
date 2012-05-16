@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <ul class="user_menu">
+    <%= render 'devise/menu/registration_items' %>
+    <%= render 'devise/menu/login_items' %>
+  </ul>
+
   <%= render :partial => 'layouts/flash_messages' %>
   
   <%= yield %>
