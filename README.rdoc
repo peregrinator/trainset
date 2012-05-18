@@ -40,7 +40,7 @@ Major gems will be listed here and have been included in the app Gemfile.
 
 #### Devise
 
-Provide authorization - sign in, sign up, reset password, etc.
+Provide authentication - sign in, sign up, reset password, etc.
 
 #### Bootstrap-Sass (Twitter Bootstrap)
 
@@ -70,3 +70,11 @@ _trainset.scss. In the application.css.scss we would add (or uncomment) the line
 replacing 'trainset' with the name of your sprite (determined from the folder path above). Before loading the scss file 
 you can define compass spriting variables (like $trainset-spacing) to customize how a sprite is created - we've found 
 that 50px of spacing between images in the sprite works the majority of the time for us.
+
+### IE Stylesheets
+
+The current strategy in place for IE quirks is to load a base IE stylesheet for the currently supported version and
+below (currently ie9 and below). For each IE version below that we do load a stylesheet for that version and all 
+versions below that. This allows styles to cascade down through the versions and only need to be defined at one level. 
+The reasoning being that IE 8, 7 and 6 often share similar style fixes and at other times they just need to be applied to 
+7 and 6. Your mileage may vary depending on how many versions of IE you need to support.
