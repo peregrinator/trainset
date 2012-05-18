@@ -52,4 +52,21 @@ Easy semantic forms - proper markup with most options available by default, easi
 
 #### Compass-Rails
 
-Compass framework for rails - mainly used for the built in spriting of images
+Compass framework for rails - mainly used for the built in spriting of images.
+
+### Sprites
+
+The app is set up for basic spriting of images (combining multiple images into a single image with proper spacing).
+Currently the preferred method is to place images in directories with the desired name for the final sprite. This
+allows the creation of a generic sprite used by the app as a whole and secondary sprites for areas that most users 
+won't see or access very often (like an admin area).
+
+For the generic stylesheet I would place images in  app/assets/images/trainset/ and then run,
+  `compass sprite -c config/compass.rb "app/assets/images/trainset/*.png" --force`
+from the project root dir. This will create a compass sprite .scss file in app/assets/images/sprites named 
+_trainset.scss. In the application.css.scss we would add (or uncomment) the lines,
+  $trainset-spacing: 50px;
+  @import "sprites/_trainset.scss";
+replacing 'trainset' with the name of your sprite (determined from the folder path above). Before loading the scss file 
+you can define compass spriting variables (like $trainset-spacing) to customize how a sprite is created - we've found 
+that 50px of spacing between images in the sprite works the majority of the time for us.
