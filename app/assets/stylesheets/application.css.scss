@@ -4,5 +4,9 @@
 
 @import "mixins/borders";
 
+/* compass sprite -c config/compass.rb "path_to_images/trainset/*.png" --force */
+/*$trainset-spacing: 50px;*/
+/*@import "sprites/_trainset.scss";*/
+
 @import "design/forms";
 @import "design/users";
