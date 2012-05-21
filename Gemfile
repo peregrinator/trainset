@@ -13,6 +13,8 @@ gem 'formtastic', '2.2.0'
 # authentication
 gem 'devise',     '2.1.0'
 
+# authorization
+gem 'cancan',     '1.6.7'
 
 
 # Gems used only for assets and not required

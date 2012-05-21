@@ -32,6 +32,7 @@ GEM
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.0.1)
     builder (3.0.0)
+    cancan (1.6.7)
     chunky_png (1.2.5)
     compass (0.12.1)
       chunky_png (~> 1.2)
@@ -142,6 +143,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 2.0.1)
+  cancan (= 1.6.7)
   compass-rails (= 1.0.1)
   devise (= 2.1.0)
   factory_girl_rails (~> 3.3.0)
