@@ -11,7 +11,7 @@ gem 'jquery-rails'
 gem 'formtastic', '2.2.0'
 
 # authentication
-gem 'devise',     '1.5.0'
+gem 'devise',     '2.1.0'
 
 
 
