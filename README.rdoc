@@ -42,6 +42,10 @@ Major gems will be listed here and have been included in the app Gemfile.
 
 Provide authentication - sign in, sign up, reset password, etc.
 
+#### Cancan
+
+Provides authorization - this has been installed but not applied to the app as use cases differ for each app.
+
 #### Bootstrap-Sass (Twitter Bootstrap)
 
 Framework providing a grid and standard styles helpful when getting started and easily customizable. Coverted to use Sass instead of the Less that Twitter maintains.
