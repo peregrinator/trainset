@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.6'
 gem 'rake',  '0.9.2.2'
 
 gem 'mysql2', '0.3.11'
@@ -21,8 +21,8 @@ gem 'cancan',     '1.6.7'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',     '~> 3.2.5'
-  gem 'bootstrap-sass', '~> 2.0.1'
-  gem 'compass-rails',  '1.0.1'
+  gem 'bootstrap-sass', '~> 2.0.3.1'
+  gem 'compass-rails',  '1.0.2'
   gem 'oily_png',       '1.0.2'  # C binding for the pure ruby chunky_png used by compass
 
   #gem 'coffee-rails', '~> 3.2.1'
